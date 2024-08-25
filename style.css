@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.carta {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.corpo {
+    padding: 20px;
+    color: #fff;
+}
+
+.footer {
+    color: #fff;
+    text-align: right;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.carta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
