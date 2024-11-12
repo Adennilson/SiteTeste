@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bk</title>
+    <title>Jayane meu amor</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="carta">
-        <div class="header">
-            <h1>Jayane</h1>
-        </div>
-        <div class="corpo">
-            <p>Você é como um café da manhã: me deixa com energia para encarar o dia, mas ao mesmo tempo me faz querer ficar na cama te apreciando por mais tempo.</p>
-        </div>
-        <div class="footer">
-            <p>Não clique aqui</p>
-        </div>
+    <audio id="musica" src="Beyoncé - Halo(MP3_160K).mp3" autoplay loop></audio>
+
+    <header>
+      <h1>2000 & SEMPRE</h1>
+    <button id="playPause">Clique aqui</button>
+    </header>
+
+    <main>
+        <section class="fotos">
+            <img src="foto1.jpg" alt="Foto">
+            <p>Jayne Lopes</p>
+            <p> De 24 de Junho para 24 de 2500</p>
+        </section>
+
+        <section class="mensagens">
+            <p>Faz 4 meses e alguns dias desde o nosso primeiro contato. Confesso que não esperava nada igual, mas não me arrependo de ter conhecido você. Você é simplesmente uma pessoa incrível, cheia de surpresas e a cada dia me surpreendo mais. O ano está acabando e você é a melhor coisa que aconteceu nesse ano.  Não realizei tudo o que planejei, mas pelo menos conheci você e isso foi um acontecimento incrível que jamais esquecerei!.</p>
+        
+        </section>
+    </main>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 <span class="highlight">[Adenilson/Desenvolvedor]</span></p>
+        <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
     </div>
+</footer>
 
-    <script src="script.js"></script>
+
+
+ <script>
+        const musica = document.getElementById("musica");
+        const playPause = document.getElementById("playPause");
+
+        playPause.addEventListener("click", () => {
+            if (musica.paused) {
+                musica.play();
+                playPause.textContent = "pauser";
+            } else {
+                musica.pause();
+                playPause.textContent = "Reproduzir";
+            }
+        });
+    </script>
+
 </body>
-
 </html>
